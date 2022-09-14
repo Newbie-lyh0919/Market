@@ -209,7 +209,7 @@ import com.market.blackList.BlackListDTO;
             StringBuilder sb = new StringBuilder();
             sb.append("grant_type=authorization_code");
             sb.append("&client_id=78df7cab2093de0eb394ceeec542eb6e");  //본인이 발급받은 key
-            sb.append("&redirect_uri=http://localhost:8099/member/kakaoLogin");     // 본인이 설정해 놓은 경로
+            sb.append("&redirect_uri=http://192.168.20.19:8099/member/kakaoLogin");     // 본인이 설정해 놓은 경로
             sb.append("&code=" + authorize_code);
             bw.write(sb.toString());
             bw.flush();
